@@ -18,7 +18,7 @@
 	<context:annotation-config />
 	
 	<!-- 启动组件扫描，排除@Controller组件，该组件由SpringMVC配置文件扫描 -->
-	<context:component-scan base-package="com.fh">
+	<context:component-scan base-package="com.pci">
 		<context:exclude-filter type="annotation"
 			expression="org.springframework.stereotype.Controller" />
 	</context:component-scan>
@@ -85,7 +85,7 @@
 	
 	<!-- 事物处理 -->
 	<aop:config>
-		<aop:pointcut id="pc" expression="execution(* com.fh.service..*(..))" />
+		<aop:pointcut id="pc" expression="execution(* com.pci.service..*(..))" />
 		<aop:advisor pointcut-ref="pc" advice-ref="txAdvice" />
 	</aop:config>
 	
@@ -107,7 +107,7 @@
 		</bean>
 		
 		<!-- 項目自定义的Realm -->
-	    <bean id="ShiroRealm" class="com.fh.interceptor.shiro.ShiroRealm" ></bean>
+	    <bean id="ShiroRealm" class="com.pci.interceptor.shiro.ShiroRealm" ></bean>
 		
 		<!-- Shiro Filter -->
 		<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">

@@ -46,7 +46,7 @@
   </servlet-mapping>
   <filter>
     <filter-name>loginFilter</filter-name>
-    <filter-class>com.fh.filter.LoginFilter</filter-class>
+    <filter-class>com.pci.filter.LoginFilter</filter-class>
   </filter>
   <listener>
     <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
@@ -69,7 +69,7 @@
   </servlet-mapping>
   <filter>
     <filter-name>startFilter</filter-name>
-    <filter-class>com.fh.filter.startFilter</filter-class>
+    <filter-class>com.pci.filter.startFilter</filter-class>
   </filter>
   <filter>
     <filter-name>shiroFilter</filter-name>
