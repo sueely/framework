@@ -1,8 +1,8 @@
-package com.com.pci.service.${packageName}.${objectNameLower};
+package com.pci.service.${packageName}.${objectNameLower};
 
 import java.util.List;
-import com.com.pci.entity.Page;
-import com.com.pci.util.PageData;
+import com.pci.entity.Page;
+import com.pci.util.PageData;
 
 /** 
  * 说明： ${TITLE}接口
